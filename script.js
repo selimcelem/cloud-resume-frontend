@@ -9,15 +9,18 @@ async function updateVisitorCount() {
         document.getElementById("visitor-count").textContent = "—";
     }
 }
+
 const toggle = document.getElementById("theme-toggle");
 const icon = document.getElementById("theme-icon");
 
-function setDarkMode(isDark) {
-    document.body.classList.toggle("dark", isDark);
+if (toggle && icon) {
 
-    if (isDark) {
-        // Sun icon
-        icon.innerHTML = `
+    function setDarkMode(isDark) {
+        document.body.classList.toggle("dark", isDark);
+
+        if (isDark) {
+            // Sun icon
+            icon.innerHTML = `
       <circle cx="12" cy="12" r="5"></circle>
       <line x1="12" y1="1" x2="12" y2="3"></line>
       <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -28,25 +31,28 @@ function setDarkMode(isDark) {
       <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
       <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
     `;
-    } else {
-        // Moon icon
-        icon.innerHTML = `
+        } else {
+            // Moon icon
+            icon.innerHTML = `
       <path d="M21 12.79A9 9 0 1 1 11.21 3
         7 7 0 0 0 21 12.79z"></path>
     `;
+        }
+
+        localStorage.setItem("theme", isDark ? "dark" : "light");
     }
 
-    localStorage.setItem("theme", isDark ? "dark" : "light");
+    // Load saved preference
+    setDarkMode(localStorage.getItem("theme") === "dark");
+
+    toggle.addEventListener("click", () => {
+        const isDark = !document.body.classList.contains("dark");
+        setDarkMode(isDark);
+    });
+
+} else {
+    console.warn("Theme toggle elements not found");
 }
-
-// Load saved preference
-setDarkMode(localStorage.getItem("theme") === "dark");
-
-toggle.addEventListener("click", () => {
-    const isDark = !document.body.classList.contains("dark");
-    setDarkMode(isDark);
-});
-
 
 
 updateVisitorCount();
