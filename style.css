@@ -60,6 +60,12 @@ section,
     box-shadow: var(--shadow);
 }
 
+.location {
+    margin: 6px 0 4px 0;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
 section {
     margin-top: 16px;
 }
