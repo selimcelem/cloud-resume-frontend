@@ -76,22 +76,32 @@
             </ul>
         </section>
 
-        <section>
+         <section>
             <h2>Cloud Projects</h2>
             <ul>
                 <li>
-                <strong>AWS SAA-C03 Practice App</strong><br />
-                Built and published a cross-platform Android/Windows quiz app to help engineers study for the AWS Solutions Architect Associate exam. Backend uses Cognito (Google OAuth, PKCE), S3 for per-user score sync and question reporting, Lambda + EventBridge for digest email notifications via SNS. Infrastructure managed with Terraform, CI/CD via GitHub Actions. 1,000 scenario-based exam questions across all SAA-C03 domains.
+                    <strong>Q-Atelier — Production AWS Website & Booking System</strong><br />
+                    Designed and deployed a live AWS-based website and booking system for a bridal atelier in the Netherlands. Built a PENDING → ACCEPT / REJECT / RESCHEDULE workflow using secure token-based email links and .ics calendar attachments via Resend API. Infrastructure managed with Terraform and CI/CD via GitHub Actions.<br />
+                    <a href="https://www.q-atelier.nl" target="_blank" rel="noreferrer">Live Site</a> |
+                    <a href="https://github.com/selimcelem/q-atelier" target="_blank" rel="noreferrer">GitHub</a>
                 </li>
                 <li>
                     <strong>Mini Cloud Deployment Platform</strong><br />
-                    Built a reusable container deployment platform on AWS using Terraform, Docker, GitHub Actions, Amazon ECR, Amazon ECS Fargate, Application Load Balancer, and CloudWatch Logs.
-                    Implemented remote Terraform state with S3, least-privilege CI/CD IAM, and ECR lifecycle cleanup for cost-aware rebuild and destroy workflows.
+                    Built a reusable container deployment platform on AWS using Terraform, Docker, GitHub Actions, Amazon ECR, Amazon ECS Fargate, Application Load Balancer, and CloudWatch Logs. Implemented remote Terraform state with S3, least-privilege CI/CD IAM, and ECR lifecycle cleanup for low-cost rebuild and destroy workflows.<br />
+                    <a href="https://github.com/selimcelem/mini-cloud-deployment-platform" target="_blank" rel="noreferrer">GitHub</a>
+                </li>
+                <li>
+                    <strong>AWS SAA-C03 Practice App</strong><br />
+                    Cross-platform Android/Windows quiz app backed by serverless AWS infrastructure. Uses Cognito for authentication, S3 for score sync and question reporting, and Lambda + EventBridge for scheduled digest email notifications via SNS. Infrastructure managed with Terraform, GitHub Actions CI/CD, and .NET MAUI.<br />
+                    <a href="https://github.com/selimcelem/aws-saa-c03-practice-app" target="_blank" rel="noreferrer">GitHub</a> |
+                    <a href="https://github.com/selimcelem/aws-saa-c03-practice-app/releases" target="_blank" rel="noreferrer">Download APK</a>
                 </li>
                 <li>
                     <strong>Cloud Resume Challenge (AWS)</strong><br />
-                    Built a production-ready resume platform on AWS using S3, CloudFront, Route 53, API Gateway, Lambda, and DynamoDB.
-                    Infrastructure is defined with Terraform and deployed via GitHub Actions CI/CD using OIDC and least-privilege IAM roles.
+                    Live serverless resume platform built with S3, CloudFront, Route 53, API Gateway, Lambda, and DynamoDB. Infrastructure defined with Terraform and deployed via GitHub Actions CI/CD using OIDC and least-privilege IAM roles.<br />
+                    <a href="https://selimcelem.com" target="_blank" rel="noreferrer">Live Site</a> |
+                    <a href="https://github.com/selimcelem/cloud-resume-challenge" target="_blank" rel="noreferrer">Backend</a> |
+                    <a href="https://github.com/selimcelem/cloud-resume-frontend" target="_blank" rel="noreferrer">Frontend</a>
                 </li>
             </ul>
         </section>
