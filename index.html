@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selim Çelem | AWS Certified Cloud Practitioner | Cloud Infrastructure & Automation</title>
+    <title>Selim Çelem | AWS Certified Cloud Practitioner | Cloud & DevOps</title>
             <!-- LinkedIn / Social preview -->
-        <meta property="og:title" content="Selim Çelem | Cloud Infrastructure & Automation" />
+        <meta property="og:title" content="Selim Çelem | Cloud & DevOps" />
         <meta property="og:description" content="AWS Certified Cloud Practitioner. Cloud Resume Challenge built with AWS, Terraform and CI/CD." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://selimcelem.com" />
@@ -20,7 +20,7 @@
             <h1>Selim Çelem</h1>
             <p class="location">Based in Utrecht, NL | Open to Remote (EU)</p>
             <p class="subtitle">
-                AWS Certified Cloud Practitioner | Cloud Infrastructure & Automation
+                AWS Certified Cloud Practitioner | Cloud & DevOps
             </p>
             <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme">
                 <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -43,7 +43,9 @@
         <section>
             <h2>Summary</h2>
             <p>
-                AWS Certified Cloud Practitioner currently preparing for the Solutions Architect Associate certification. Background in BIM engineering with strong experience in structured technical workflows, multidisciplinary coordination, and process automation. Built multiple production-ready AWS platforms: a serverless resume platform (API Gateway, Lambda, DynamoDB), a container deployment platform (ECS Fargate, ECR, ALB), and a cross-platform Android/Windows app backed by Cognito, S3, Lambda, EventBridge and SNS — all infrastructure managed with Terraform and deployed via GitHub Actions CI/CD.
+                <p>
+                AWS Certified Cloud Practitioner with 5+ years of engineering experience, transitioning into Cloud/DevOps. Built AWS-based systems including a live booking platform, a container deployment platform, and a serverless resume application. Infrastructure managed with Terraform and GitHub Actions CI/CD.
+                </p>
             </p>
         </section>
 
@@ -60,19 +62,9 @@
         <section>
             <h2>Skills</h2>
             <ul class="two-col">
-                <li>AWS fundamentals (IAM, S3, CloudFront, Lambda, DynamoDB, API Gateway)</li>
-                <li>Infrastructure as Code: Terraform</li>
-                <li>CI/CD: GitHub Actions (OIDC, automated deploys)</li>
-                <li>Python (Lambda), pytest</li>
-                <li>Git & GitHub (branching, PR-ready workflow)</li>
-                <li>Technical documentation (clear step-by-step runbooks)</li>
-                <li>Model-based coordination & information management (BIM)</li>
-                <li>Workflow automation mindset (Dynamo / scripting-driven processes)</li>
-                <li>Tools: Autodesk Revit, Navisworks, Solibri, BCF/IFC workflows</li>
-                <li>AWS Cognito (OAuth / PKCE, Identity Pools, per-user IAM scoping)</li>
-                <li>AWS SNS, EventBridge, Lambda (Python + triggered workflows)</li>
-                <li>.NET MAUI (Android + Windows cross-platform development)</li>
-                
+                <li><strong>Cloud & DevOps:</strong> AWS (S3, CloudFront, Lambda, API Gateway, DynamoDB, Cognito, EventBridge, IAM, ECS, ECR), Terraform (IaC), GitHub Actions (CI/CD), Git, YAML/JSON</li>
+                <li><strong>Programming:</strong> Python, C# (.NET MAUI), JavaScript (basic)</li>
+                <li><strong>Core Concepts:</strong> Serverless architecture, Infrastructure as Code, OIDC authentication, Linux CLI</li>
             </ul>
         </section>
 
@@ -80,25 +72,22 @@
             <h2>Cloud Projects</h2>
             <ul>
                 <li>
-                    <strong>Q-Atelier - Production AWS Website & Booking System (Featured)</strong><br />
-                    Designed and deployed a live AWS-based website and booking system for a bridal atelier in the Netherlands. Built a PENDING - ACCEPT / REJECT / RESCHEDULE workflow using secure token-based email links and .ics calendar attachments via Resend API. Infrastructure managed with Terraform and CI/CD via GitHub Actions. Deployed for real client usage with live booking workflows.<br />
+                    <strong>Q-Atelier - Production AWS Website & Booking System </strong><br />
+                    Designed and deployed serverless AWS platform for a live client website with booking workflow (PENDING - ACCEPT / REJECT / RESCHEDULE). Implemented secure token-based email links and .ics calendar attachments via Resend API. Infrastructure managed with Terraform and CI/CD via GitHub Actions.<br />
                     <a href="https://www.q-atelier.nl" target="_blank" rel="noreferrer">View Live</a> |
                     <a href="https://github.com/selimcelem/q-atelier" target="_blank" rel="noreferrer">Source Code</a>
                 </li>
-        
-                <li>
-                    <strong>Mini Cloud Deployment Platform</strong><br />
-                    Built a reusable container deployment platform on AWS using Terraform, Docker, GitHub Actions, Amazon ECR, Amazon ECS Fargate, Application Load Balancer, and CloudWatch Logs. Implemented remote Terraform state with S3, least-privilege CI/CD IAM, and ECR lifecycle cleanup for low-cost rebuild and destroy workflows.<br />
-                    <a href="https://github.com/selimcelem/mini-cloud-deployment-platform" target="_blank" rel="noreferrer">Source Code</a>
-                </li>
-        
                 <li>
                     <strong>AWS SAA-C03 Practice App</strong><br />
                     Built a cross-platform Android/Windows quiz app backed by serverless AWS infrastructure. Uses Cognito for authentication, S3 for score sync and question reporting, and Lambda + EventBridge for scheduled digest email notifications via SNS. Infrastructure managed with Terraform, GitHub Actions CI/CD, and .NET MAUI.<br />
                     <a href="https://github.com/selimcelem/aws-saa-c03-practice-app" target="_blank" rel="noreferrer">Source Code</a> |
                     <a href="https://github.com/selimcelem/aws-saa-c03-practice-app/releases" target="_blank" rel="noreferrer">Download APK</a>
                 </li>
-        
+                 <li>
+                    <strong>Mini Cloud Deployment Platform</strong><br />
+                    Built a reusable container deployment platform on AWS using Terraform, Docker, GitHub Actions, Amazon ECR, Amazon ECS Fargate, Application Load Balancer, and CloudWatch Logs. Implemented remote Terraform state with S3, least-privilege CI/CD IAM, and ECR lifecycle cleanup for low-cost rebuild and destroy workflows.<br />
+                    <a href="https://github.com/selimcelem/mini-cloud-deployment-platform" target="_blank" rel="noreferrer">Source Code</a>
+                </li>
                 <li>
                     <strong>Cloud Resume Challenge (AWS)</strong><br />
                     Live serverless resume platform built with S3, CloudFront, Route 53, API Gateway, Lambda, and DynamoDB. Infrastructure defined with Terraform and deployed via GitHub Actions CI/CD using OIDC and least-privilege IAM roles.<br />
