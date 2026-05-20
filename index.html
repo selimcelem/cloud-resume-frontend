@@ -6,7 +6,7 @@
     <title>Selim Çelem | AWS Certified Cloud Practitioner | Cloud & DevOps</title>
             <!-- LinkedIn / Social preview -->
         <meta property="og:title" content="Selim Çelem | Cloud & DevOps" />
-        <meta property="og:description" content="AWS Certified Cloud Practitioner. Cloud Resume Challenge built with AWS, Terraform and CI/CD." />
+        <meta property="og:description" content="AWS Certified Cloud Practitioner. Platform engineering on AWS with Terraform, Kubernetes, and GitOps." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://selimcelem.com" />
         <meta property="og:image" content="https://selimcelem.com/preview.png" />
@@ -43,9 +43,7 @@
         <section>
             <h2>Summary</h2>
             <p>
-                <p>
-                AWS Certified Cloud Practitioner with 5+ years of engineering experience, transitioning into Cloud/DevOps. Built AWS-based systems including a production-grade EKS pipeline with Terraform modules and GitOps-driven deployments, a container deployment platform, and a serverless resume application.
-                </p>
+                AWS Certified Cloud Practitioner with 5+ years of engineering experience, transitioning into Cloud/DevOps. Building AWS-based platforms with Terraform, GitHub Actions, and Kubernetes, including a GitOps-driven platform with ArgoCD, an EKS deployment pipeline with Helm and IRSA, and a containerized deployment platform on ECS Fargate.
             </p>
         </section>
 
@@ -62,9 +60,9 @@
         <section>
             <h2>Skills</h2>
             <ul class="two-col">
-                <li><strong>Cloud & DevOps:</strong> AWS (S3, CloudFront, Lambda, API Gateway, DynamoDB, Cognito, EventBridge, IAM, ECS, ECR, EKS), Kubernetes, Helm, IRSA, Terraform (IaC), GitHub Actions (CI/CD), Git, YAML/JSON</li>
+                <li><strong>Cloud & DevOps:</strong> AWS (EKS, ECS Fargate, ECR, VPC, IAM, Lambda, API Gateway, DynamoDB, S3, CloudFront, CloudWatch), Kubernetes, Helm, ArgoCD, Terraform (IaC), GitHub Actions (CI/CD), Prometheus, Grafana, Git, YAML/JSON</li>
                 <li><strong>Programming:</strong> Python, C# (.NET MAUI), JavaScript (basic)</li>
-                <li><strong>Core Concepts:</strong> Serverless architecture, Infrastructure as Code, OIDC authentication, Linux CLI</li>
+                <li><strong>Core Concepts:</strong> Platform engineering, GitOps, Infrastructure as Code, OIDC authentication, Linux CLI</li>
             </ul>
         </section>
 
@@ -72,26 +70,32 @@
             <h2>Cloud Projects</h2>
             <ul>
                 <li>
+                    <strong>AWS GitOps Platform (in development)</strong><br />
+                    Building a GitOps-driven Kubernetes platform on AWS with ArgoCD as single source of truth for cluster state. Terraform-provisioned VPC, EKS, ECR, IAM (IRSA), RDS, and SQS, with ArgoCD self-installed via Terraform helm_release. API and worker services deployed via Helm with Kustomize overlays for dev and prod. Observability via Prometheus and Grafana. Architecture decisions documented as ADRs.<br />
+                    <a href="https://github.com/selimcelem/aws-gitops-platform-config" target="_blank" rel="noreferrer">Platform Config</a> |
+                    <a href="https://github.com/selimcelem/aws-gitops-platform-app" target="_blank" rel="noreferrer">Application Repo</a>
+                </li>
+                <li>
                     <strong>AWS EKS Application Deployment Pipeline</strong><br />
-                    Provisioned production-grade AWS infrastructure using Terraform modules - VPC with public/private subnets, NAT Gateway, EKS cluster and ECR. Built GitHub Actions CI/CD pipeline with OIDC authentication to build Docker images, push to ECR and deploy to EKS via Helm. Configured IAM roles with least-privilege S3 access for pods via IRSA.<br />
+                    Provisioned production-grade AWS infrastructure using Terraform modules: VPC with public/private subnets, NAT Gateway, EKS cluster, and ECR. Built GitHub Actions CI/CD pipeline with OIDC authentication to build Docker images, push to ECR, and deploy to EKS via Helm. Configured IAM roles with least-privilege S3 access for pods via IRSA.<br />
                     <a href="https://github.com/selimcelem/aws-eks-pipeline" target="_blank" rel="noreferrer">Source Code</a>
+                </li>
+                <li>
+                    <strong>Mini Cloud Deployment Platform</strong><br />
+                    Built a reusable container deployment platform on AWS using Terraform, Docker, GitHub Actions, Amazon ECR, Amazon ECS Fargate, Application Load Balancer, and CloudWatch Logs. Implemented remote Terraform state with S3, least-privilege CI/CD IAM, and ECR lifecycle cleanup for low-cost rebuild and destroy workflows.<br />
+                    <a href="https://github.com/selimcelem/mini-cloud-deployment-platform" target="_blank" rel="noreferrer">Source Code</a>
+                </li>
+                <li>
+                    <strong>Q-Atelier — Production AWS Website & Booking System</strong><br />
+                    Designed and deployed serverless AWS platform for a live website with booking workflow (PENDING / ACCEPT / REJECT / RESCHEDULE). Implemented secure token-based email links and .ics calendar attachments via Resend API. Infrastructure managed with Terraform and CI/CD via GitHub Actions.<br />
+                    <a href="https://www.q-atelier.nl" target="_blank" rel="noreferrer">View Live</a> |
+                    <a href="https://github.com/selimcelem/q-atelier" target="_blank" rel="noreferrer">Source Code</a>
                 </li>
                 <li>
                     <strong>AWS SAA-C03 Practice App</strong><br />
                     Built a cross-platform Android/Windows quiz app backed by serverless AWS infrastructure. Uses Cognito for authentication, S3 for score sync and question reporting, and Lambda + EventBridge for scheduled digest email notifications via SNS. Infrastructure managed with Terraform, GitHub Actions CI/CD, and .NET MAUI.<br />
                     <a href="https://github.com/selimcelem/aws-saa-c03-practice-app" target="_blank" rel="noreferrer">Source Code</a> |
                     <a href="https://github.com/selimcelem/aws-saa-c03-practice-app/releases" target="_blank" rel="noreferrer">Download APK</a>
-                </li>
-                 <li>
-                    <strong>Mini Cloud Deployment Platform</strong><br />
-                    Built a reusable container deployment platform on AWS using Terraform, Docker, GitHub Actions, Amazon ECR, Amazon ECS Fargate, Application Load Balancer, and CloudWatch Logs. Implemented remote Terraform state with S3, least-privilege CI/CD IAM, and ECR lifecycle cleanup for low-cost rebuild and destroy workflows.<br />
-                    <a href="https://github.com/selimcelem/mini-cloud-deployment-platform" target="_blank" rel="noreferrer">Source Code</a>
-                </li>
-                <li>
-                    <strong>Q-Atelier - Production AWS Website & Booking System </strong><br />
-                    Designed and deployed serverless AWS platform for a live client website with booking workflow (PENDING - ACCEPT / REJECT / RESCHEDULE). Implemented secure token-based email links and .ics calendar attachments via Resend API. Infrastructure managed with Terraform and CI/CD via GitHub Actions.<br />
-                    <a href="https://www.q-atelier.nl" target="_blank" rel="noreferrer">View Live</a> |
-                    <a href="https://github.com/selimcelem/q-atelier" target="_blank" rel="noreferrer">Source Code</a>
                 </li>
                 <li>
                     <strong>Cloud Resume Challenge (AWS)</strong><br />
